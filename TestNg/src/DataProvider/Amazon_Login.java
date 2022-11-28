@@ -38,12 +38,10 @@ public class Amazon_Login {
 				WebElement ac=dr.findElement(By.xpath("//span[@class='a-list-item']"));
 				System.err.println(ac.getText());
 				Assert.assertTrue(ac.isDisplayed(), "Test failed");
-			}
-			
-            System.out.println("sai");
+			}          
 			dr.quit();
 	}
-		@DataProvider
+		@DataProvider(parallel=true)
 		public Object[][] getData()
 		{
 			return new Object[][] {
