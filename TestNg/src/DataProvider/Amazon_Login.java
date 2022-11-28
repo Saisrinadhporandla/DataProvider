@@ -40,7 +40,7 @@ public class Amazon_Login {
 				Assert.assertTrue(ac.isDisplayed(), "Test failed");
 			}
 			
-
+            System.out.println("sai");
 			dr.quit();
 	}
 		@DataProvider
